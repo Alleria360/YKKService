@@ -8,8 +8,8 @@ var lodash = require('lodash');
 
 var other = {
 
-    env: 'development',
-    // env: 'production',
+    // env: 'development',
+    env: 'production',
 
     mongodb:{
         options: {
