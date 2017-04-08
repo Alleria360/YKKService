@@ -34,13 +34,13 @@ var DescribeSchema = new Schema({
     brief:{ type: String },
 
     /** 参考范围 */
-    ref_range:{ type: String },
+    range:{ type: String },
 
     /** 异常原因 */
-    ex_reason:{ type: String },
+    reason:{ type: String },
 
     /** 健康建议 */
-    health_advice:{ type: String },
+    advice:{ type: String },
 
     /** 养护重点 */
     nurs_point:{ type: String },

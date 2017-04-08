@@ -21,7 +21,7 @@ var AsRepentrySub = new Schema({
 
     /** 项目代码 */
     item_code:{
-        type:String,
+        type:String
         // unique: true
     },
 
