@@ -56,7 +56,8 @@ exports.getAllList = function (req, res, next) {
  */
 exports.getReports = function (req, res, next) {
 
-    var barcode = req.param('barcode');
+    var barcode = req.query.barcode;
+    // var barcode = req.param('barcode');
 
     var error_msg;
 
@@ -108,8 +109,8 @@ exports.getReports = function (req, res, next) {
  */
 exports.getReport = function (req, res, next) {
 
-    var reportid = req.param('reportid');
-
+    var reportid = req.query.reportid;
+    // var reportid = req.param('reportid');
     var error_msg;
     if (!reportid) {
         error_msg = '报告单号不能为空.';

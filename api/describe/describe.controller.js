@@ -51,7 +51,8 @@ exports.addDescribe=function (req, res, next) {
  */
 exports.getDescribe = function (req, res, next) {
 
-    var index_code = req.param('index_code');
+    // var index_code = req.param('index_code');
+    var index_code = req.query.index_code;
     if(!index_code)
         return res.status(422).send({error_msg: '指标代码不能为空.'});
 
